@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
+@theme {
+    --font-sans: Rubik, sans-serif;
+    --font-mono: 'Jetbrains Mono', monospace;
+    --font-serif: 'Josefin Sans', serif;
+}
+
+@plugin "daisyui" {
+
+}
+
+@plugin "daisyui/theme" {
+    name: "ame";
+    default: true;
+    prefersdark: true;
+    --color-base-100: oklch(14% 0.020 299.500);
+    --color-base-200: oklch(17.8% 0.020 299.500);
+    --color-base-300: oklch(21.6% 0.020 299.500);
+    --color-base-content: oklch(96% 0.001 286.375);
+    --color-primary: oklch(0% 0 0);
+    --color-primary-content: oklch(100% 0 0);
+    --color-secondary: oklch(59% 0.249 0.584);
+    --color-secondary-content: oklch(97% 0.014 343.198);
+    --color-accent: oklch(84.5% 0.298 302.321);
+    --color-accent-content: oklch(97% 0.014 308.299);
+    --color-neutral: oklch(27% 0.087 286.033);
+    --color-neutral-content: oklch(98% 0 0);
+    --color-info: oklch(74% 0.188 293.900);
+    --color-info-content: oklch(29% 0.066 243.157);
+    --color-success: oklch(79% 0.110 148.100);
+    --color-success-content: oklch(26% 0.065 152.934);
+    --color-warning: oklch(82% 0.142 69.400);
+    --color-warning-content: oklch(27% 0.077 45.635);
+    --color-error: oklch(78.9% 0.223 355.100);
+    --color-error-content: oklch(25% 0.092 26.042);
+    --radius-selector: 2rem;
+    --radius-field: 1rem;
+    --radius-box: 1rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 1;
+    --noise: 0;
+}
+
+@layer base {
+    /*body {*/
+    /*    background-image: url("https://i.pinimg.com/736x/d4/68/65/d46865a656598f7162a99a159fb16e83.jpg");*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: cover;*/
+    /*    background-position: center;*/
+    /*}*/
+
+    html {
+        color-interpolation: sRGB;
+    }
+}
+
+@utility glassy {
+    @apply bg-pink-300/5 border border-pink-300/40 shadow-2xl;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.page {
+    @apply flex flex-col items-center
+}
