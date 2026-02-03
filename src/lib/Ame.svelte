@@ -1,8 +1,8 @@
-<img id="ame" src="/src/lib/assets/ame.webp" alt="ame"
-onclick={() => {
-new Audio("src/lib/assets/meow.wav").play()
+<img id="ame" src="/assets/ame.webp" alt="ame"
+     onclick={() => {
+new Audio("/assets/meow.wav").play()
 }}/>
-<img src="/src/lib/assets/petpet.gif" alt="petpet" id="cursor"
+<img src="/assets/petpet.gif" alt="petpet" id="cursor"
      style="top: {mousePos.y}px; left: {mousePos.x}px"/>
 
 <script lang="ts">
