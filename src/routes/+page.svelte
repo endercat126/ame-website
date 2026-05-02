@@ -3,7 +3,5 @@
 </script>
 
 <div class="page">
-    hi im ame
-
-    <Ame></Ame>
+    content
 </div>

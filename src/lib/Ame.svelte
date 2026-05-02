@@ -30,6 +30,7 @@ new Audio("/assets/meow.wav").play()
       scale: 0.4;
       display: none;
       pointer-events: none;
+      user-select: none;
     }
 
     @keyframes bounce {
